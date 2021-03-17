@@ -108,6 +108,7 @@ body {
 }
 .xinshe, .xieyungong, .linji , .mituosi, .wusanto, .alishan, .xinshe-big, .xieyungong-big
 {
+  cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
 }
