@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Microsoft JhengHei;
+  color: #898989;
+}
+
+.logo, .petal, .rightbar, .footbar, .ui.transparent.input, .search_button, .leftbar ,.navbar ,.fb, .twitter
+{
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo{
+  width: 26.6vw;
+  height: 18.21vw;
+  background-image: url("./resource/左上logo.png");
+  left: 3.17vw;
+  top: 2.44vw;
+}
+.petal{
+  width: 18vw;
+  height: 16vw;
+  background-image: url("./resource/右下花瓣.png");
+  right: 11vw;
+  top: 39.36vw;
+}
+.rightbar{
+  width: 0.537vw;
+  height: 36vw;
+  background-image: url("./resource/右直線.png");
+  right: 10vw;
+  top: 18.8vw;
+}
+.footbar{
+  width: 77.2vw;
+  height: 0.147vw;
+  background-image: url("./resource/下直線.png");
+  right: 14vw;
+  top: 52.58vw;
+}
+
+/*搜尋*/
+.ui.transparent.input{
+  width: 36.18vw;
+  height: 2.88vw;
+  background-image: url("./resource/搜尋.png");
+  right: 36vw;
+  top: 8.06vw;
+}
+.search_button{
+  background-image: url("./resource/搜.png");
+  right: 4.7vw;
+  width: 6vw;
+  height: 2.88vw;
+}
+
+/*以下左側欄*/
+.leftbar{
+  width: 4.69vw;
+  height: 40vw;
+  background-image: url("./resource/縣市地區欄.png");
+  left: 3.17vw;
+  top: 13.92vw;
+}
+.city, .region, .time{
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 4.68vw;
+  height: 6vw;
+}
+.city{
+ top: 3vw;
+ background-image: url("./resource/縣市.png");
+ cursor: pointer; 
+}
+.region{
+ top: 11vw;
+ background-image: url("./resource/區域.png");
+}
+.time{
+  top: 19vw;
+  background-image: url("./resource/時間.png");
+}
+.city_jump{
+  position: absolute;
+  background-color: #B0DCDC;
+  width:20vw;
+  height: 6vw;
+  display: none;
+  border-radius: 15px;
+}
+.ui.link.list{
+  position: absolute;
+  right: 2vw;
+  top: 1.5vw;
+  background-color: #f7f7f7;
+  width:10vw;
+  height: 20vw;
+}
+
+/*以下風景圖片*/
+.mituosi:hover {
+  box-shadow: 1vw gray;
+}
+.xinshe, .xieyungong, .linji , .mituosi, .wusanto, .alishan, .xinshe-big, .xieyungong-big
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid-container {
+  position: absolute;
+  right: 14vw;
+  top : 18.8vw;
+
+  width: 57.62vw;
+  height: 27.34vw;
+  display: grid;
+  grid-template-columns: 27.12% 25.4% 19.75% 19.75% ;
+  grid-template-rows: 1fr;
+  gap: 0% 2.54%;
+  grid-template-areas:
+    "xx lm wusanto alishan";
+}
+.lm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 69% 26.5%;
+  gap: 4.5% 0px;
+  grid-template-areas:
+    "linji"
+    "mituosi";
+  grid-area: lm;
+}
+.xx {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 51.5% 44%;
+  gap: 4.5% 0px;
+  grid-template-areas:
+    "xinshe"
+    "xieyungong";
+  grid-area: xx;
+}
+.xinshe { grid-area: xinshe; 
+  background-image: url("./resource/新社/新社_小圖.png");
+}
+.xieyungong { grid-area: xieyungong; 
+  background-image: url("./resource/協雲宮/協雲宮_小圖.png");
+}
+.linji { grid-area: linji; 
+  background-image: url("./resource/林記.png");
+}
+.mituosi { grid-area: mituosi; 
+  background-image: url("./resource/彌陀寺.png");
+}
+.wusanto { grid-area: wusanto; 
+  background-image: url("./resource/烏山頭.png");
+}
+.alishan { grid-area: alishan; 
+  background-image: url("./resource/阿里山.png");
+}
+.xinshe-big.gray {
+  background-image: url("./resource/新社/新社_遮色片.png");
+}
+.xieyungong-big.gray {
+  background-image: url("./resource/協雲宮/協雲宮_遮色片.png");
+}
+.xinshe-big.big {
+  background-image: url("./resource/新社/新社_大圖.png");
+}
+.xieyungong-big.big {
+  background-image: url("./resource/協雲宮/協雲宮_大圖.png");
+}
+.gray, .big{
+  position: absolute;
+  right: 42vw;
+  width: 20vw;
+  display: none;
+}
+.xinshe-big{
+  height: 14.11vw;
+}
+.xieyungong-big{
+  height: 12.1vw;
+}
+.xinshe:hover>.xinshe-big{
+  display: block;
+}
+.xieyungong:hover>.xieyungong-big{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
