@@ -204,8 +204,9 @@ body {
 .footer{
   position: absolute;
   left: 10vw;
-  top: 55vw;
+  top: 60vw;
   font-size: 10px;
+  color: #898989;
 }
 
 
