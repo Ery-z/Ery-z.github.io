@@ -5,6 +5,7 @@
 body {
   font-family: Microsoft JhengHei;
   color: #898989;
+  max-width: 100vw;
 }
 
 .logo, .petal, .rightbar, .footbar, .ui.transparent.input, .search_button, .leftbar ,.navbar ,.fb, .twitter
