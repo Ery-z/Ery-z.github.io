@@ -42,6 +42,10 @@ body {
   top: 52.58vw;
 }
 
+.ui.borderless.menu{
+  overflow: auto;
+}
+
 /*搜尋*/
 .ui.transparent.input{
   width: 36.18vw;
